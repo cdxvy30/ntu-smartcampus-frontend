@@ -1,0 +1,95 @@
+.
+├── gulpfile.js                                                         --> 套版 License        
+├── jsconfig.json                                                       --> 編譯設定   
+├── package.json                                                        --> Nodejs 執行與包裹參數設定  
+├── public                                                              --> Html資料夾
+│   ├── apple-icon.png                                                  --> 網頁 icon
+│   ├── favicon.png                                                     --> 網頁 icon
+│   ├── index.html                                                      --> 網頁 html
+│   └── manifest.json                                                   --> 網頁設定
+├── src                                                                 --> 主程式資料夾
+│   ├── assets                                                          --> 網頁 Asset 資料夾
+│   │   ├── css                                                         --> 網頁 Css 資料夾
+│   │   ├── fonts                                                       --> 網頁字型資料夾
+│   │   ├── img                                                         --> 網頁圖檔資料夾
+│   │   └── scss                                                        --> 網頁 Scss 資料夾
+│   ├── components                                                      --> 通用元件資料夾
+│   │   ├── CustomUpload                                                --> 客製化上傳元件
+│   │   │   └── ImageUpload.js                                          --> 客製化上傳元件
+│   │   ├── FixedPlugin                                                 --> 固定網頁側邊元件
+│   │   │   └── FixedPlugin.js                                          --> 固定網頁側邊元件
+│   │   ├── Footers                                                     --> 網頁 Footer 資料夾
+│   │   │   ├── AdminFooter.js                                          --> Admin 頁面 Footer
+│   │   │   └── AuthFooter.js                                           --> 註冊/登入頁面 Footer
+│   │   ├── Navbars                                                     --> 網頁頂部 Navbar 資料夾
+│   │   │   ├── AdminNavbar.js                                          --> Admin 頁面頂部 Navbar
+│   │   │   └── AuthNavbar.js                                           --> 註冊/登入頁面頂部 Navbar
+│   │   ├── ReactTable                                                  --> Table 元件
+│   │   │   └── ReactTable.js                                           --> Table 元件
+│   │   ├── Sidebar                                                     --> 網頁側邊 Sidebar
+│   │   │   └── Sidebar.js                                              --> 網頁側邊 Sidebar
+│   │   └── TagsInput                                                   --> Tag 元件
+│   │       └── TagsInput.js                                            --> Tag 元件
+│   ├── config.js                                                       --> 網頁全域定數
+│   ├── context                                                         --> React Context 管理資料夾
+│   │   ├── Alert.jst                                                   --> Alert Context
+│   │   ├── Auth.js                                                     --> 帳號權限 Context
+│   │   ├── i18n-en.js                                                  --> 英文文字參照
+│   │   ├── i18n-zh.js                                                  --> 中文文字參照
+│   │   ├── i18n.js                                                     --> i18n Context
+│   │   └── use-memorized-value.js                                      --> 參數更動檢測 Context
+│   ├── index.js                                                        --> React 進入檔
+│   ├── layouts                                                         --> 網頁 Layout 設計資料夾
+│   │   ├── Admin.js                                                    --> Admin 頁面 Layout 設計資料夾
+│   │   └── Auth.js                                                     --> 註冊/登入頁面 Layout 設計資料夾
+│   ├── routes.js                                                       --> 網頁路徑參照
+│   └── views                                                           --> 網頁元件資料夾
+│       ├── ApproveDashboard.js                                         --> 管理員審核 Dashboard
+│       ├── Components                                                  --> ArcGIS 元件資料夾
+│       │   ├── ArcGISViewer.js                                         --> 一般 ArcGIS Viewer
+│       │   ├── ArcGISViewerApprove.js                                  --> 管理員審核 ArcGIS Viewer
+│       │   ├── LayerSelector.js                                        --> 一般 ArcGIS Layer 選擇器
+│       │   ├── LayerSelectorApprove.js                                 --> 管理員審核 ArcGIS Layer 選擇器
+│       │   └── arcgis                                                  --> ArcGIS Javascript 於 React 中執行之元件
+│       │       ├── Plugin.js                                           --> ArcGIS Javascript Plugin 之 React 元件進入檔
+│       │       ├── Plugins                                             --> ArcGIS Javascript Plugin 之 React 元件資料夾
+│       │       │   ├── Carousel.js                                     --> 圖檔瀏覽器
+│       │       │   ├── CarouselButton.js                               --> 圖檔瀏覽器按鈕
+│       │       │   ├── Chart.js                                        --> 圖表
+│       │       │   ├── ChartButton.js                                  --> 圖表按鈕
+│       │       │   ├── FileManager.js                                  --> Common File 檔案瀏覽器
+│       │       │   └── FileManagerButton.js                            --> Common File 檔案瀏覽器按鈕
+│       │       ├── PointLayer.js                                       --> Point Layer 元件
+│       │       ├── SavePlugin.js                                       --> 儲存 Layer Plugin
+│       │       ├── SensorLayer.js                                      --> Sensor Layer 元件
+│       │       ├── Setting.js                                          --> ArcGIS 設定
+│       │       ├── ShapeLayer.js                                       --> Shape Layer 元件
+│       │       ├── color.js                                            --> Point Layer 呈現顏色設定
+│       │       └── css                                                 --> ArcGIS Plugin Css 資料夾
+│       │           └── SavePlugin.css                                  --> 儲存 Layer Plugin 之 Css
+│       ├── Dashboard.js                                                --> 一般 Dashboard
+│       ├── Forms                                                       --> 上傳表單資料夾
+│       │   └── Wizard                                                  --> 上傳表單 Wizard
+│       │       ├── Forms                                               --> Wizard 表單資料夾
+│       │       │   ├── PointDataForm.js                                --> Point Data 上傳表單
+│       │       │   ├── SensorDataForm.js                               --> Sensor 上傳表單
+│       │       │   ├── SensorForm.js                                   --> Sensor Project 上傳表單
+│       │       │   ├── ShapeCommonFileForm.js                          --> Common File 上傳表單
+│       │       │   ├── ShapeDataForm.js                                --> Shape Data 上傳表單
+│       │       │   └── ShapeFileForm.js                                --> Shape File 上傳表單
+│       │       ├── ModalForm.js                                        --> 更改值格式 Popup 表單
+│       │       ├── Step1.js                                            --> Wizard Step1 元件
+│       │       ├── Step2.js                                            --> Wizard Step2 元件
+│       │       ├── Step3.js                                            --> Wizard Step3 元件
+│       │       └── Wizard.js                                           --> Wizard 元件進入檔
+│       ├── Pages                                                       --> 頁面管理資料夾
+│       │   ├── LoginPage.js                                            --> 登入頁面
+│       │   ├── RegisterPage.js                                         --> 註冊頁面
+│       │   └── UserPage.js                                             --> 使用者管理頁面
+│       └── Tables                                                      --> 表單管理資料夾
+│           ├── ApplicantsTable.js                                      --> 申請人審核表單元件
+│           ├── ApproveCommonTables.js                                  --> Common File 審核表單元件
+│           ├── ApproveTables.js                                        --> 檔案審核表單元件
+│           ├── DataTables.js                                           --> 檢視檔案內容之表單元件
+│           └── PublishStatusTable.js                                   --> 檢視發布狀態之表單元件
+└── yarn.lock                                                           --> Yarn 執行與包裹環境參數文件

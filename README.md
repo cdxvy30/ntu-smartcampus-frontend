@@ -8,7 +8,7 @@
 * esri/react-arcgis@5.1.0
 * Ogre service : transfer geojson to shapefile
 
-## Deploy
+## Deploy (better with NVM installed)
 * In root
   * `npm install -g npm@6.12.0` if necessary.
   * `npm install`

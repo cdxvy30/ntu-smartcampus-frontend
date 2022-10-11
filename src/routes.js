@@ -27,6 +27,9 @@ import UserPage from "views/Pages/UserPage.js";
 import LoginPage from "views/Pages/LoginPage.js";
 import RegisterPage from "views/Pages/RegisterPage.js";
 
+import IPCSData from "views/IPCSData";
+// import WMTSMap from "";
+
 var routes = [
   {
     collapse: true,
@@ -102,6 +105,24 @@ var routes = [
     component: ApprovePublishTables,
     adminOnly: true
   },
+  {
+    path: "/ipcs-data",
+    layout: "/admin",
+    name: "IPCS Data Query",
+    zhName: "空氣盒子資料搜索",
+    icon: "nc-icon nc-notes",
+    component: IPCSData,
+    adminOnly: false
+  },
+  // {
+  //   path: "ntu-wmts",
+  //   layout: "admin",
+  //   name: "NTU WMTS Map",
+  //   zhName: "臺大電子地圖服務",
+  //   icon: "nc-icon nc-notes",
+  //   component: ,
+  //   adminOnly: false
+  // },
   {
     redirect: true,
     path: "/table",
